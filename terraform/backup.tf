@@ -24,6 +24,7 @@ resource "oci_core_volume_backup_policy_assignment" "homelab_boot_volume_backup_
 
   depends_on = [
     oci_core_instance.vm_instance_x86_64,
-    oci_core_instance.vm_instance_ampere
+    oci_core_instance.vm_instance_ampere,
+    oci_core_volume.vm_instance_homelab_core_volume
   ]
 }
