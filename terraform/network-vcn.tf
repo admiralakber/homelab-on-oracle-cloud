@@ -3,7 +3,7 @@ module "vcn" {
   version = "2.2.0"
 
   compartment_id = oci_identity_compartment.homelab.id
-  region         = "ap-southeast-2"
+  region         = "ap-sydney-1"
   vcn_name       = var.compartment_name
   vcn_dns_label  = var.compartment_name
 
